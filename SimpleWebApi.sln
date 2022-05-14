@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMinimalApi", "MyMinimalAp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8537BA5B-9EF1-4BEB-A4A6-CA767E7B8247}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{46894B63-3988-45CC-AFF1-D3313F7F3971}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyUnitTests", "MyUnitTests\MyUnitTests.csproj", "{591E31B5-D37E-4806-B128-F1D195DA7D5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,8 +18,13 @@ Global
 		{BB2CE62E-AAD9-41FC-BA07-52F352B9280C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB2CE62E-AAD9-41FC-BA07-52F352B9280C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB2CE62E-AAD9-41FC-BA07-52F352B9280C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{591E31B5-D37E-4806-B128-F1D195DA7D5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{591E31B5-D37E-4806-B128-F1D195DA7D5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{591E31B5-D37E-4806-B128-F1D195DA7D5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{591E31B5-D37E-4806-B128-F1D195DA7D5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BB2CE62E-AAD9-41FC-BA07-52F352B9280C} = {8537BA5B-9EF1-4BEB-A4A6-CA767E7B8247}
+		{591E31B5-D37E-4806-B128-F1D195DA7D5A} = {46894B63-3988-45CC-AFF1-D3313F7F3971}
 	EndGlobalSection
 EndGlobal
