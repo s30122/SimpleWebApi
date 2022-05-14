@@ -12,6 +12,7 @@ jobs:
     uses: './.github/workflows/build-and-test.yml'
   deploy:
     runs-on: ubuntu-latest
+    needs: call_build_job
     environment:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
