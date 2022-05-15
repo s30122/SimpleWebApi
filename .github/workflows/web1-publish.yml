@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: call_build_job
     steps:
-      - run: ls
+      - run: echo $(ls)
       
       - name: dotnet publish
         run: dotnet publish ./MyMinimalApi/MyMinimalApi.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
