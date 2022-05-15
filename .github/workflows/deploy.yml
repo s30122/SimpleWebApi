@@ -1,7 +1,7 @@
 name: Deploy web app
 
 env:
-  AZURE_WEBAPP_NAME: 'yeh-simple-abp'
+  AZURE_WEBAPP_NAME: 'yeh-web1'
   AZURE_WEBAPP_PACKAGE_PATH: '.'
   
 on:
