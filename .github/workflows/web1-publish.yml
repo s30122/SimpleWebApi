@@ -12,7 +12,7 @@ jobs:
     needs: call_build_job
     steps:
       - name: dotnet publish
-        run: dotnet publish MyMinimalApi/MyMinimalApi.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish ~/SimpleWebApi/MyMinimalApi/MyMinimalApi.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
