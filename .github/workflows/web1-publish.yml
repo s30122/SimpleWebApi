@@ -1,11 +1,15 @@
-name: Build and test asp.net core web app
+name: Publish asp.net core web app
 
 on:
+  workflow_dispatch:
   workflow_call:
     
 jobs:
+  call_build_job:
+    uses: './.github/workflows/build-and-test.yml'
   publish:
     runs-on: ubuntu-latest
+    needs: call_build_job
     steps:
       - name: dotnet publish
         run: dotnet publish \MyMinimalApi\MyMinimalApi.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
